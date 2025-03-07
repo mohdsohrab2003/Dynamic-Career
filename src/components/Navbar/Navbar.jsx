@@ -3,9 +3,14 @@ import { useState } from "react";
 import navList from "../../Store/navMenulist";
 import NavMenuList from "./NavMenuList";
 import brandLogo from "../../assets/images/brand-logo.png"; // Import the logo correctly
+import {  useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
     const [navData] = useState(navList);
+    // const navigate = useNavigate();
+    // const handleNavigate = () => {
+    //     navigate('/dashboard-home');
+    //   };
 
     return (
         <nav className="w-full h-[110px] -mt-2 fixed top-0 left-0 right-0 bg-white shadow-[0_4px_6px_-2px_rgba(0,0,0,0.2)] z-50">
@@ -29,7 +34,7 @@ const Navbar = () => {
 
                 {/* Login/Register Button */}
                 <div className="mr-12">
-                    <button className="bg-[#3BB0FF] text-white py-3 px-5 rounded-md cursor-pointer transition duration-300 hover:bg-indigo-600">
+                    <button className="bg-[#3BB0FF] text-white py-3 px-5 rounded-md cursor-pointer transition duration-300 hover:bg-indigo-600"  >
                         Login/Register
                     </button>
                 </div>
