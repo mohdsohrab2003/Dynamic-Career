@@ -7,7 +7,7 @@ const Header = ({ handleToggleSilder }) => {
       <a href="#" className="sliderIcon" onClick={handleToggleSilder}>
         <img
           src="src/assets/icons/sliders-solid.svg"
-          className="w-[2rem]"
+          lassName="w-[2rem]"
           alt=""
         />
       </a>
